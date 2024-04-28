@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"aproximar",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"aproximar",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
