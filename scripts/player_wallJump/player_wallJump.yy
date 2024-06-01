@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"player_wallJump",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"player_wallJump",
+  "parent":{
+    "name":"PlayerScripts",
+    "path":"folders/Scripts/PlayerScripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

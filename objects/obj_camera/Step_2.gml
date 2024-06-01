@@ -1,5 +1,3 @@
-camera_set_view_size(view_camera[VIEW],VIEW_WIDTH,VIEW_HEIGHT)
-
 if (instance_exists(global.view_target)) {
   var _x_to = global.view_target.x - VIEW_WIDTH/2;
 	var _y_to = global.view_target.y - VIEW_HEIGHT/2;

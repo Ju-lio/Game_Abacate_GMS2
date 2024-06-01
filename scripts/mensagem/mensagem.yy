@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"mensagem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mensagem",
+  "parent":{
+    "name":"Debug",
+    "path":"folders/Scripts/Debug.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

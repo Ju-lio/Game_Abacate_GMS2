@@ -34,9 +34,6 @@
     "name":"spr_rampa_esquerda",
     "path":"sprites/spr_rampa_esquerda/spr_rampa_esquerda.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_rampa_esquerda",
-    "path":"sprites/spr_rampa_esquerda/spr_rampa_esquerda.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
