@@ -44,6 +44,7 @@ player_pode_mover = 0; // Se 0 = Pode
 player_direcao = 0;
 player_x_scale = 1;
 player_y_scale = 1;
+player_free = true;
 
 state = player_state_free;
 
