@@ -50,6 +50,7 @@
     {"id":{"name":"obj_plataforma_one_way","path":"objects/obj_plataforma_one_way/obj_plataforma_one_way.yy",},},
     {"id":{"name":"obj_plataforma_vertical_bkp","path":"objects/obj_plataforma_vertical_bkp/obj_plataforma_vertical_bkp.yy",},},
     {"id":{"name":"obj_plataforma_vertical","path":"objects/obj_plataforma_vertical/obj_plataforma_vertical.yy",},},
+    {"id":{"name":"obj_platform","path":"objects/obj_platform/obj_platform.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_rampa_direita","path":"objects/obj_rampa_direita/obj_rampa_direita.yy",},},
     {"id":{"name":"obj_rampa_esquerda","path":"objects/obj_rampa_esquerda/obj_rampa_esquerda.yy",},},

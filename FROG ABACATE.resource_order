@@ -33,6 +33,7 @@
     {"name":"obj_plataforma_one_way","order":7,"path":"objects/obj_plataforma_one_way/obj_plataforma_one_way.yy",},
     {"name":"obj_plataforma_vertical_bkp","order":13,"path":"objects/obj_plataforma_vertical_bkp/obj_plataforma_vertical_bkp.yy",},
     {"name":"obj_plataforma_vertical","order":6,"path":"objects/obj_plataforma_vertical/obj_plataforma_vertical.yy",},
+    {"name":"obj_platform","order":17,"path":"objects/obj_platform/obj_platform.yy",},
     {"name":"obj_rampa_direita","order":3,"path":"objects/obj_rampa_direita/obj_rampa_direita.yy",},
     {"name":"obj_rampa_esquerda","order":4,"path":"objects/obj_rampa_esquerda/obj_rampa_esquerda.yy",},
     {"name":"obj_UI","order":16,"path":"objects/obj_UI/obj_UI.yy",},

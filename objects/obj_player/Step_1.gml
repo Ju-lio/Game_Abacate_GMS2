@@ -40,7 +40,7 @@ player_velocidade_vertical = clamp(player_velocidade_vertical, player_velocidade
 
 // PULO
 var _tecla_pulo = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(global.gamepad_id,gp_face1);
-var _no_chao = place_meeting(x,y + 2, obj_chao);
+var _no_chao = place_meeting(x,y + 2, obj_chao) || place_meeting(x,y + 2, obj_platform);
 var _na_parede = place_meeting(x+1,y,obj_chao) || place_meeting(x-1,y,obj_chao);
 
 if (_no_chao) {

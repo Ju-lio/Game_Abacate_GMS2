@@ -15,6 +15,7 @@ function player_state_free() {
 		player_dash = false;
 		alarm[0] = player_dash_delay;
 		player_free = false;
+		image_index = 0;
 		state = player_state_dash;
 	}
 
@@ -32,7 +33,6 @@ function player_state_dash() {
 	if (player_dash_time >= player_dash_distancia) {
 		state = player_state_free;
 	}
-	image_index = 0;
 	sprite_index = spr_player_dash;
 }
 
@@ -52,4 +52,41 @@ function player_state_hit() {
     state = player_state_free;
 		player_hit = false;
   }
+}
+
+function player_state_walljump() {
+	// PULO
+	var _tecla_pulo = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(global.gamepad_id,gp_face1);
+	var _no_chao = place_meeting(x,y + 2, obj_chao);
+  var _na_parede = place_meeting(x+1,y,obj_chao) || place_meeting(x-1,y,obj_chao);
+	
+	var _tecla_esquerda = keyboard_check(vk_left) || gamepad_axis_value(global.gamepad_id, gp_axislh) < -AXIS_DEADZONE || gamepad_button_check(global.gamepad_id,gp_padl);
+	var _tecla_direita = keyboard_check(vk_right) || gamepad_axis_value(global.gamepad_id, gp_axislh) > AXIS_DEADZONE || gamepad_button_check(global.gamepad_id,gp_padr);
+	var _movimentando = (_tecla_esquerda - _tecla_direita) != 0;
+	var _tecla_dash = keyboard_check_pressed(vk_shift) || gamepad_button_check_pressed(global.gamepad_id,gp_face4);
+	var _tecla_ataque =  keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(global.gamepad_id,gp_face3)
+
+	// if (_na_parede) && (!_no_chao) {
+		// player_velocidade_horizontal = 0;
+	player_coyote_time = player_coyote_time_max;
+	player_pulo_count = player_pulo_max;
+	player_dash_count = player_dash_max;
+		if (player_velocidade_vertical > 1) {
+			sprite_index = spr_player_wall;
+			player_velocidade_vertical = 1;	
+		}
+		
+		if (_tecla_pulo) {
+			player_pular()
+			player_pode_mover = 5;
+			player_velocidade_horizontal -= 2 * player_x_scale;
+			state = player_state_free;
+			exit;
+		}   
+
+		if (!_na_parede){
+			state = player_state_free;
+			exit;
+		} 
+	// }
 }

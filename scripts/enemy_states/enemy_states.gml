@@ -3,14 +3,6 @@ function enemy_state_free() {
     exit;
   }
 
-  if instance_exists(obj_plataforma_one_way_vertical) {
-    if(obj_plataforma_one_way_vertical.bbox_top < bbox_bottom - 1) {
-      exit
-    }
-  }
-  y += aproximar(0,50,0.4);
-
-
   var _player = obj_player;
 
   // Calcula a direção para o jogador

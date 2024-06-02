@@ -31,10 +31,19 @@ repeat(abs(player_velocidade_horizontal)) {
 
 // COLISAO VERTICAL
 repeat(abs(player_velocidade_vertical)) {
-	if(place_meeting(x,y+sign(player_velocidade_vertical),obj_chao)) || permite_colisao {
-		  player_velocidade_vertical = 0;
-		  break;
+	
+	var _plataform_collision = noone;
+	var _bplataform_collision = false;
+	
+	_plataform_collision = instance_place(x, y+(player_velocidade_vertical), obj_platform);
+	if _plataform_collision != noone {
+		_bplataform_collision = (_plataform_collision.bbox_top >= bbox_bottom);
+	}
+	
+	if(place_meeting(x,y+sign(player_velocidade_vertical),obj_chao)) || _bplataform_collision {
+		player_velocidade_vertical = 0;
+		break;
 	} else {
-		  y+= sign(player_velocidade_vertical);
+		y+= sign(player_velocidade_vertical);
 	}
 }

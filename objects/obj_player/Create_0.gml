@@ -53,4 +53,3 @@ permite_colisao = false;
 
 fov_angle_attack = 15; // Ângulo de visão em graus
 fov_radius_attack = 15; // Raio de visão
-
