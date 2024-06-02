@@ -15,7 +15,7 @@ draw_text(15, display_get_gui_height()-15,"HP. "+_life);
 _life = "0";
 
 if (instance_exists(obj_inimigo)) {
-   _life = string(obj_inimigo.life);
+   _life = string(obj_inimigo.player_life);
 }
 
 draw_set_halign(fa_right);

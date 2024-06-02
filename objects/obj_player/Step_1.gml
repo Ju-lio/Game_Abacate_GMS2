@@ -34,10 +34,6 @@ if(player_velocidade_horizontal != 0) {
 	player_x_scale = sign(player_velocidade_horizontal);
 }
 
-// MOVIMENTAÇÃO VERTICAL
-player_velocidade_vertical += player_gravidade;
-player_velocidade_vertical = clamp(player_velocidade_vertical, player_velocidade_vertical_min, player_velocidade_vertical_max);
-
 // PULO
 var _tecla_pulo = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(global.gamepad_id,gp_face1);
 var _no_chao = place_meeting(x,y + 2, obj_chao) || place_meeting(x,y + 2, obj_platform);

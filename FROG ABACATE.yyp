@@ -40,6 +40,7 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},},
     {"id":{"name":"obj_config","path":"objects/obj_config/obj_config.yy",},},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_entidade_parent","path":"objects/obj_entidade_parent/obj_entidade_parent.yy",},},
     {"id":{"name":"obj_gerador_plataforma","path":"objects/obj_gerador_plataforma/obj_gerador_plataforma.yy",},},
     {"id":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},},

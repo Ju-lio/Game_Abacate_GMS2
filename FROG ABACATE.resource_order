@@ -23,6 +23,7 @@
     {"name":"obj_camera","order":2,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"obj_chao","order":1,"path":"objects/obj_chao/obj_chao.yy",},
     {"name":"obj_config","order":12,"path":"objects/obj_config/obj_config.yy",},
+    {"name":"obj_enemy","order":18,"path":"objects/obj_enemy/obj_enemy.yy",},
     {"name":"obj_entidade_parent","order":9,"path":"objects/obj_entidade_parent/obj_entidade_parent.yy",},
     {"name":"obj_gerador_plataforma","order":14,"path":"objects/obj_gerador_plataforma/obj_gerador_plataforma.yy",},
     {"name":"obj_inimigo","order":8,"path":"objects/obj_inimigo/obj_inimigo.yy",},
