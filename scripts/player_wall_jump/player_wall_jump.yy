@@ -1,9 +1,9 @@
 {
   "$GMScript":"",
-  "%Name":"player_wallJump",
+  "%Name":"player_wall_jump",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"player_wallJump",
+  "name":"player_wall_jump",
   "parent":{
     "name":"PlayerScripts",
     "path":"folders/Scripts/PlayerScripts.yy",

@@ -31,13 +31,23 @@ player_gravidade = 0.3;
 player_aceleracao = 0.3;
 player_desaceleracao = 0.3;
 
+// Ataque
+player_atacando = false;
+
 // Outros
 player_pode_mover = 0; // Se 0 = Pode
 player_direcao = 0;
 player_x_scale = 1;
 player_y_scale = 1;
 
-// Teste
+state = player_state_free;
+
+// Testes
 permite_colisao = false;
 
-state = player_state_free;
+fov_angle = 60; // Ângulo de visão em graus
+fov_radius = 60; // Raio de visão
+
+fov_angle_attack = 30; // Ângulo de visão em graus
+fov_radius_attack = 30; // Raio de visão
+

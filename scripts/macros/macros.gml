@@ -3,3 +3,5 @@
 #macro VIEW_HEIGHT 180
 #macro VIEW_SCALE 4
 #macro VIEW_SPEED 0.1
+
+#macro AXIS_DEADZONE 0.25

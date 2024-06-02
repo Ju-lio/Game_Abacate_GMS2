@@ -14,3 +14,5 @@ ataque_delay = 0;
 ataque_tempo = 60;
 ataque_pode_atacar = 0; // se 0 pode;
 ataque_dano = false;
+
+state = enemy_state_free;

@@ -1,1 +1,1 @@
-global.game_debug = true;
+global.game_debug = false;
