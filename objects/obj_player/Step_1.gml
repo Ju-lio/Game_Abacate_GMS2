@@ -23,17 +23,6 @@ if (_movimentando) {
 	player_velocidade = aproximar(player_velocidade, 0, player_desaceleracao);
 }
 
-// DIRECIONAMENTO DO PLAYER
-player_pode_mover = aproximar(player_pode_mover, 0, 0.4);
-if (player_pode_mover <= 0) {
-	player_velocidade_horizontal = lengthdir_x(player_velocidade, player_direcao);
-}
-
-// INVERTER SPRITE DO PLAYER
-if(player_velocidade_horizontal != 0) {
-	player_x_scale = sign(player_velocidade_horizontal);
-}
-
 // PULO
 var _tecla_pulo = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(global.gamepad_id,gp_face1);
 var _no_chao = place_meeting(x,y + 2, obj_chao) || place_meeting(x,y + 2, obj_platform);

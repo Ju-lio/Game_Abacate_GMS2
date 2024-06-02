@@ -39,10 +39,37 @@ function player_state_dash() {
 function player_state_attack() {
   sprite_index = spr_player_attack;
 	player_atacando = true;
+	
+	// Supondo que você tem uma variável para armazenar a referência ao inimigo mais próximo
+	var _nearest_enemy = noone;
+	var _nearest_distance = -1;
+
+	// Loop através de todos os inimigos
+	with(obj_enemy) {
+	    // Calcular a distância entre o jogador e o inimigo atual
+	    var _distance_to_player = point_distance(x, y, obj_player.x, obj_player.y);
+    
+	    // Verificar se este é o inimigo mais próximo até agora
+	    if (_nearest_distance == -1 || _distance_to_player < _nearest_distance) {
+	        _nearest_enemy = id; // Armazenar a instância do inimigo
+	        _nearest_distance = _distance_to_player; // Atualizar a distância mais próxima
+	    }
+	}
+
+	// Atacar o inimigo mais próximo, se houver algum
+	if (_nearest_enemy != noone) {
+    if (!_nearest_enemy.in_hit) && place_meeting(x,y,_nearest_enemy) {
+			_nearest_enemy.life -= 1;
+			_nearest_enemy.image_index = 0;
+  		_nearest_enemy.state = enemy_state_hit;
+		}
+	}
+
+	
   if image_index >= image_number-1 {
     state = player_state_free;
 		player_atacando = false;
-  }
+	}
 }
 
 function player_state_hit() {

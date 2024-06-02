@@ -1,4 +1,6 @@
 event_inherited()
+player_life = 200;
+
 
 // Pulo
 player_pulo_max = 2;

@@ -11,15 +11,15 @@ left_limit = x - 100;  // Ajuste conforme necessário
 right_limit = x + 100; // Ajuste conforme necessário
 
 // Ataque
-ataque_delay_max = 14;
-ataque_delay = 0;
-ataque_tempo = 60;
-ataque_pode_atacar = 0; // se 0 pode;
-ataque_dano = false;
+attack_delay_max = 14;
+attack_delay = 0;
+attack_time = 60;
+can_attack = 0; // se 0 pode;
+attack_damage = false;
 
 // Vida
-player_life_max = 3;
-player_life = player_life_max;
-taking_hit = false;
+life_max = 3;
+life = life_max;
+in_hit = false;
 
 state = enemy_state_free;
