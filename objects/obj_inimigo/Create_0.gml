@@ -15,4 +15,9 @@ ataque_tempo = 60;
 ataque_pode_atacar = 0; // se 0 pode;
 ataque_dano = false;
 
+// Vida
+life_max = 3;
+life = life_max;
+taking_hit = false;
+
 state = enemy_state_free;

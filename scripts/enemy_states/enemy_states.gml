@@ -91,3 +91,12 @@ function enemy_state_free() {
     }
   }
 }
+
+function enemy_state_hit() {
+	sprite_index = spr_inimigo_hit;
+	taking_hit = true;
+  if image_index >= image_number-1 {
+    state = enemy_state_free;
+		taking_hit = false;
+  }
+}

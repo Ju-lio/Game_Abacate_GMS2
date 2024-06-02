@@ -1,3 +1,9 @@
+//END STEP
+
+if (player_life <= 0) && image_index >= image_number-1 {
+	instance_destroy();
+}
+
 repeat(abs(player_velocidade_horizontal)) {
 	
 	// SUBIR RAMPA // COLISAO HORIZONTAL

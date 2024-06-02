@@ -19,10 +19,10 @@ player_coyote_time_max = 10;
 
 // Dash
 player_dash = true;
-player_dash_delay = 30;
+player_dash_delay = 15;
 player_dash_forca = 6;
 player_dash_time = 0;
-player_dash_distancia = 7;
+player_dash_distancia = 14;
 player_dash_max = 1;
 player_dash_count = player_dash_max; 
 
@@ -33,6 +33,11 @@ player_desaceleracao = 0.3;
 
 // Ataque
 player_atacando = false;
+
+// Vida
+player_life_max = 3;
+player_life = player_life_max;
+player_hit = false;
 
 // Outros
 player_pode_mover = 0; // Se 0 = Pode
@@ -45,9 +50,6 @@ state = player_state_free;
 // Testes
 permite_colisao = false;
 
-fov_angle = 60; // Ângulo de visão em graus
-fov_radius = 60; // Raio de visão
-
-fov_angle_attack = 30; // Ângulo de visão em graus
-fov_radius_attack = 30; // Raio de visão
+fov_angle_attack = 15; // Ângulo de visão em graus
+fov_radius_attack = 15; // Raio de visão
 

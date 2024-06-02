@@ -5,7 +5,7 @@ if global.game_debug {
 
 	// Desenha o raio de visão
 	draw_set_color(c_red)	
-	draw_circle(x, y-(sprite_height/2), fov_radius_attack, false);
+	draw_circle(x+(sprite_height/2), y-(sprite_height/2), fov_radius_attack, false);
 
 	// draw_set_alpha(1);
 	// draw_set_color(c_white);

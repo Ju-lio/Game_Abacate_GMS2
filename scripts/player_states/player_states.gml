@@ -78,6 +78,7 @@ function player_state_free() {
 }
 
 function player_state_dash() {
+	player_velocidade_vertical = 0;
 	player_dash_time = aproximar(player_dash_time, player_dash_distancia, 1);
 	player_velocidade_horizontal = lengthdir_x(player_dash_forca, player_direcao)
 	if (player_dash_time >= player_dash_distancia) {
@@ -92,5 +93,14 @@ function player_state_attack() {
   if image_index >= image_number-1 {
     state = player_state_free;
 		player_atacando = false;
+  }
+}
+
+function player_state_hit() {
+	sprite_index = spr_player_hit;
+	player_hit = true;
+  if image_index >= image_number-1 {
+    state = player_state_free;
+		player_hit = false;
   }
 }
