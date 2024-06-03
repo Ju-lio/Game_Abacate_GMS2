@@ -8,7 +8,7 @@ if (player_pode_mover <= 0) {
 	player_velocidade_horizontal = lengthdir_x(player_velocidade, player_direcao);
 }
 
-// INVERTER SPRITE DO PLAYER
-if(player_velocidade_horizontal != 0) {
-	player_x_scale = sign(player_velocidade_horizontal);
-}
+//// INVERTER SPRITE DO PLAYER
+//if(player_velocidade_horizontal != 0) {
+//	player_x_scale = sign(player_velocidade_horizontal);
+//}

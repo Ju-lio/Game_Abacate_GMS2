@@ -17,6 +17,9 @@ attack_time = 60;
 can_attack = 0; // se 0 pode;
 attack_damage = false;
 
+// Outros
+random_distance = random_range(-30,30);
+
 // Vida
 life_max = 3;
 life = life_max;
